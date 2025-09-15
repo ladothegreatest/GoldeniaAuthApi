@@ -9,11 +9,8 @@ builder.Services.AddScoped<GoldeniaAuthApi.Services.ISmsService, GoldeniaAuthApi
 var app = builder.Build();
 
 // Configure pipeline
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
