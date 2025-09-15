@@ -1,0 +1,114 @@
+[
+  {
+    "ContainingType": "GoldeniaAuthApi.Controllers.KycController",
+    "Method": "ApproveKyc",
+    "RelativePath": "api/Kyc/approve/{kycId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kycId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoldeniaAuthApi.Controllers.KycController",
+    "Method": "GetKycStatus",
+    "RelativePath": "api/Kyc/status/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoldeniaAuthApi.Controllers.KycController",
+    "Method": "SubmitKyc",
+    "RelativePath": "api/Kyc/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GoldeniaAuthApi.Models.KycSubmissionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoldeniaKycApi.Controllers.RegistrationController",
+    "Method": "Register",
+    "RelativePath": "api/Registration/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GoldeniaAuthApi.Models.RegistrationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoldeniaKycApi.Controllers.RegistrationController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/Registration/verify-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GoldeniaAuthApi.Models.VerifyEmailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoldeniaKycApi.Controllers.SmsController",
+    "Method": "SendSmsVerification",
+    "RelativePath": "api/Sms/send-verification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GoldeniaKycApi.Controllers.SendSmsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoldeniaKycApi.Controllers.SmsController",
+    "Method": "VerifySms",
+    "RelativePath": "api/Sms/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GoldeniaAuthApi.Models.VerifySmsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
